@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+button {
+  cursor: pointer;
+}
+input {
+  outline: none;
+}
 header .container {
   margin: 30px auto 0;
   width: 1218px;
@@ -339,10 +344,9 @@ header .container {
   padding: 70px 0px 20px 40px;
   width: 35%;
 }
-.service_text .service_o{
+.service_text .service_o {
   display: flex;
   flex-wrap: wrap;
-
 }
 .service_text h2 {
   margin-left: 30px;
@@ -357,7 +361,7 @@ header .container {
   color: #1d1d1d;
 }
 .service_text p {
-  margin: 20px 0 20px 30px ;
+  margin: 20px 0 20px 30px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -375,4 +379,262 @@ header .container {
   gap: 20px;
   border: 1px solid #d1d1d1;
   width: 45%;
+}
+
+.products {
+  width: 100%;
+  background-color: #d1d1d1;
+  gap: 30px;
+}
+.products h2 {
+  text-align: center;
+  padding: 40px 30px;
+}
+.products h3 {
+  padding: 20px;
+  color: #1d1d1d;
+  font-weight: 400;
+  text-align: center;
+}
+.products h4 {
+  color: #d29650;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.products img {
+  text-align: center;
+}
+.box {
+  text-align: center;
+}
+.prod-box {
+  margin: 0 auto;
+  width: 920px;
+  display: flex;
+}
+/*  */
+
+.location {
+  margin-top: 60px;
+  background-image: url("../imgs/Rectangle\ 11.png");
+}
+
+.location .container {
+  display: flex;
+}
+.location-text {
+  padding: 30px;
+  color: white;
+}
+
+.location h2 {
+  margin: 80px 300px 0px 350px;
+  font-weight: 700;
+  font-size: 32px;
+}
+.location li {
+  margin: 30px 0px 50px 300px;
+  font-weight: 400;
+}
+
+.location iframe {
+  height: 100%;
+  margin-left: 50px;
+}
+
+.certificate .container h2 {
+  margin-top: 20px;
+  padding: 40px;
+  text-align: center;
+}
+.certificate .cfr-photo {
+  gap: 40px;
+  display: flex;
+}
+.certificate img {
+  align-items: center;
+  text-align: center;
+}
+
+.certificate .container { 
+  display: flex;
+  padding: 97px 449px;
+  align-items: center;
+  flex-wrap: wrap;          
+  justify-content: center;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.main .container h2 {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43.58px;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.main .main_infos {
+  margin-top: 72px;
+  display: grid;
+  gap: 150px;
+}
+
+.main_infos .info {
+  display: flex;
+  padding: 70px 351px;
+  gap: 134px;
+}
+.main_infos .info:nth-child(even) {
+  background-color: #ccc;
+  flex-direction: row-reverse;
+}
+.main_infos .info:nth-child(2) .right_p {
+  gap: 0;
+}
+.main_infos .info:nth-child(2) .right h3 {
+  margin-top: 70px;
+}
+.main_infos .info:nth-child(3) .right_p {
+  gap: 40px;
+}
+.main_infos .info:nth-child(3) .right h3 {
+  margin-top: 90px;
+}
+.main_infos .info:nth-child(4) .right h3 {
+  margin-top: 90px;
+}
+.main_infos .info:nth-child(4) .right_p ul {
+  margin-top: 130px;
+}
+.main_infos .info .img {
+  background-image: url("../imgs/photo_2024-05-16_11-03-55.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  height: 645px;
+}
+
+.main_infos .info .img h3 {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43.58px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 255px 108px;
+}
+
+.main_infos .info .right_p {
+  width: 594px;
+  height: 264px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  opacity: 0px;
+}
+.main_infos .info .right_p p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+}
+.main_infos .info .right_p ul {
+  display: block;
+  font-family: "Open Sans";
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.79px;
+  text-align: left;
+}
+
+.main_infos .info .right_p p span {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
+  text-align: left;
+}
+.main_infos .info .right_p span {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
+  text-align: left;
+}
+
+.main_infos .info .right h3 {
+  margin-top: 47px;
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;
+  text-align: left;
+  color: #1d1d1d;
+}
+
+.main_infos .info .right table thead tr {
+  background-color: #dedede;
+}
+
+.main_infos .info .right table thead tr th,
+td {
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+  opacity: 0px;
+}
+
+.main_infos .info .right table tbody tr td {
+  border-bottom: 1px solid #dedede;
+}
+
+.main_infos .info .right table tbody tr:first-child td:first-child {
+  border: none;
+  font-weight: bold;
+  width: 34%;
+}
+
+.main_infos .info .right table {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  text-align: left;
+  color: #1d1d1d;
+}
+
+.info .info_btn {
+  margin-top: 51px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.info .info_btn button {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24.51px;
+}
+
+.info .info_btn button:first-child {
+  padding: 16px 50px 16px 50px;
+  gap: 10px;
+  border: 1px solid #d29650;
+  opacity: 0px;
+  background-color: transparent;
+}
+.info .info_btn button:last-child {
+  padding: 16px 50px 16px 50px;
+  gap: 10px;
+  border: 1px solid #d29650;
+  background-color: #d29650;
+  color: #fff;
+  opacity: 0px;
 }
