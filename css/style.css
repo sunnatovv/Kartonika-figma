@@ -9,8 +9,15 @@ button {
 input {
   outline: none;
 }
+.container {
+  width: 1218px;
+  margin: 0px auto 0;
+  text-align: center;
+  align-items: center;
+}
 header .container {
   margin: 30px auto 0;
+  /* width: 1218px; */
   width: 1218px;
   height: 69px;
   gap: 0px;
@@ -178,22 +185,22 @@ header .container {
   color: #1d1d1d;
 }
 
-/* ---------------------------- */
+/* ---------------------------------------MENU SECTION----------------------------------- */
 
+.menu {
+  width: 100%;
+  background-color: #cb883a;
+}
 .menu .container {
   margin-top: 30px;
-  width: 100%;
   height: 55px;
   top: 129px;
-  gap: 0px;
   opacity: 0px;
   background: #cb883a;
   display: flex;
   align-items: center;
-  padding: 0 100px;
   justify-content: space-between;
 }
-
 .menu .container .menu_bar {
   display: flex;
   width: Hug (715px) px;
@@ -225,7 +232,6 @@ header .container {
   height: 35px;
   top: 139px;
   left: 1319px;
-  gap: 0px;
   border-radius: 100px;
   outline: none;
   padding: 0 20px;
@@ -249,12 +255,11 @@ header .container {
   z-index: 10;
 }
 
-/* -------------------------------- */
+/* ---------------------------------------CAROUSEL-SECTION-------------------------------------- */
 
-.carusel .container {
+.carusel {
   background-image: url("../imgs/Rectangle\ 4.svg");
   height: 540px;
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -262,6 +267,10 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: start;
+  padding: 20px;
+}
+.carusel .container {
+  height: 400px;
 }
 .carusel .container::after {
   content: "";
@@ -275,10 +284,8 @@ header .container {
 
 .carusel .container .text {
   width: 533px;
-  /* height: 132px; */
   position: absolute;
   z-index: 1;
-  left: 100px;
 }
 
 .carusel .container .text h1 {
@@ -337,8 +344,6 @@ header .container {
   border: 1px 0px 0px 0px;
   opacity: 0px;
 }
-
-/* .service .container */
 
 .service_text {
   padding: 70px 0px 20px 40px;
@@ -427,20 +432,33 @@ header .container {
   padding: 30px;
   color: white;
 }
+.location .left-side {
+  color: white;
+  width: 50%;
+  display: flex;
+  padding: 70px 50px;
+  flex-wrap: wrap;
+}
+.location .right-side {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .location h2 {
-  margin: 80px 300px 0px 350px;
   font-weight: 700;
   font-size: 32px;
 }
 .location li {
-  margin: 30px 0px 50px 300px;
+  margin: 30px 0px 20px 0px;
   font-weight: 400;
+  text-align: left;
 }
 
-.location iframe {
-  height: 100%;
-  margin-left: 50px;
+.right-side iframe {
+  margin-left: 10px;
+  height: 500px;
+  width: 500px;
 }
 
 .certificate .container h2 {
@@ -457,15 +475,24 @@ header .container {
   text-align: center;
 }
 
-.certificate .container { 
+.certificate .container {
   display: flex;
   padding: 97px 449px;
   align-items: center;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-/* ----------------------------------------------------------------------------------- */
+.clients {
+  background-color: #f2f2f2;
+}
+.clients h2 {
+  text-align: center;
+  padding: 40px 30px;
+}
+
+
+/* --------------------------------------MAIN SECTION--------------------------------------------- */
 
 .main .container h2 {
   font-family: "Open Sans";
@@ -479,12 +506,11 @@ header .container {
 .main .main_infos {
   margin-top: 72px;
   display: grid;
-  gap: 150px;
+  gap: 140px;
 }
 
 .main_infos .info {
   display: flex;
-  padding: 70px 351px;
   gap: 134px;
 }
 .main_infos .info:nth-child(even) {
@@ -529,8 +555,7 @@ header .container {
 }
 
 .main_infos .info .right_p {
-  width: 594px;
-  height: 264px;
+  /* height: 264px; */
   display: flex;
   align-items: center;
   gap: 30px;
@@ -585,7 +610,7 @@ header .container {
 
 .main_infos .info .right table thead tr th,
 td {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   gap: 10px;
   opacity: 0px;
 }
@@ -637,4 +662,31 @@ td {
   background-color: #d29650;
   color: #fff;
   opacity: 0px;
+}
+
+/* --------------------------------marquee content ---------------------------------*/
+.rel {
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  width: 200px;
+  padding: 50px;
+}
+
+.items {
+  display: flex;
+  gap: 30px;
+  width: calc(200px * 10);
+  animation: marqueeContent 20s linear infinite;
+}
+
+@keyframes marqueeContent {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc( -200px * 5));
+  }
 }
